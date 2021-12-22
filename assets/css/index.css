@@ -1,0 +1,89 @@
+@media only screen and (min-width: 992px) {
+    /* that's the width used by bootstrap to hide/show the navbar options */
+    #navbar-menu ul {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+    }
+}
+
+body {
+    background-color: silver;
+}
+
+.page-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+nav {
+    width: 100% !important;
+    position: sticky !important;
+}
+
+main section {
+    padding: 5vw;
+}
+
+main section * {
+    width: 100%;
+    text-align: center;
+}
+
+main section h1 {
+    margin-bottom: 5vh;
+}
+
+main section > p {
+    text-align: justify;
+}
+
+.text-with-img {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-with-img * {
+    align-self: center;
+}
+
+.text-with-img p {
+    text-align: justify;
+}
+
+.text-with-img img {
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+}
+
+form input,
+form textarea {
+    text-align: left;
+}
+
+footer {
+    color: silver;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.follow-links {
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+
+.follow-links a,
+.follow-links a:visited {
+    color: silver;
+}
+
+.follow-links a:hover {
+    color: #6c757d;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <title>Home - Cristiano Guidotti</title>
+</head>
+
+<body>
+    <div class="page-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects_section">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact_section">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section id="welcome_section">
+                <h1>Welcome!</h1>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <p>This is my personal website. Here you can find out about me and my portfolio.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Cristiano Guidotti
+                    </figcaption>
+                </figure>
+            </section>
+
+            <section id="about_section">
+                <h1>About me</h1>
+                <div class="text-with-img">
+                    <p>
+                        I was born in Bologna, IT in 1999. After joining a scientific lyceum, I graduated from it in
+                        2017. Currently, I'm studying for the main Computer Science course at <em>Università di Bologna</em>. In addition, I
+                        occasionally work in the family company <em>Analysis</em>, which works mainly on a CRM called
+                        <em>QualiWare</em>. I like working on digital applications because my dream is to create useful
+                        software frameworks which should help people in dealing with business management, daily life
+                        problems and environmental issues.
+                    </p>
+                    <img src="./assets/images/profile-picture.png" width="150" height="150" aria-hidden="true">
+                </div>
+
+            </section>
+
+            <section id="projects_section">
+                <h1>Projects</h1>
+                <p>
+                    I'm still at the beginning, so I haven't developed any interesting project yet. However, during
+                    university periods, I
+                    contributed to a couple of projects, and I'm working on another one at the moment.
+                </p>
+                <p>
+                    The first one I worked on was a very raw videogame called <em>Non-Gravitar</em>, similar to the
+                    world famous <em>Space Invaders</em>. It was entirely written in C++ and I used SFML for the
+                    graphics.
+                </p>
+                <p>
+                    The second project to which I have contributed was a set of applications useful for <a
+                        href="https://en.wikipedia.org/wiki/Gamification_of_learning">gamification of learning</a> and
+                    made in order to build games to entertain children at museums. The set of applications were coded
+                    using
+                    JavaScript, HTML and CSS. The back-end part was written for NodeJS and used Express.
+                </p>
+
+                <p>
+                    I am currently working on another JavaScript project called <em>Tweet tracker</em>. The goal of this
+                    application is to aggregate a set of tweets (basing on an hashtag, a username or a keyword) and
+                    build a series of dashboards showing its data and metadata. Currently we are thinking of maps (using
+                    Twitter's geolocation feature), bar charts, pie charts and word clouds. We are using React, Leaflet
+                    and React Google Charts for the front-end part and NodeJS and Express for the back-end, while Axios
+                    is being used in both parts.
+                </p>
+                <p>
+                    For the family company, I usually work on customized VB.NET forms used by our customers on their own
+                    instance of QualiWare (the main application which we mantain).
+                </p>
+                <p>
+                    This website is also part of a learning project, in this case for an online course. It has been made
+                    in a couple of days with only HTML, CSS and Bootstrap 5.
+                </p>
+            </section>
+
+            <section id="contact_section">
+                <h1>Contact</h1>
+                <form class="row g-3" target="_blank" action="https://formsubmit.co/cguidotti@qualiware.it"
+                    method="POST">
+                    <div class="col-md-6">
+                        <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <input type="hidden" name="_subject" value="New message from portfolio website">
+                    <div class="col-md-12">
+                        <textarea placeholder="Your Message" class="form-control" name="message" rows="10"
+                            required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer class="bg-dark p-3">
+            <div class="p-3">2021 • Cristiano Guidotti</div>
+
+            <ul class="follow-links p-3">
+                <li>
+                    <a href="https://github.com/cguidotti"><i class="fab fa-github fa-2x"></i></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+
+</html>
